@@ -1,64 +1,80 @@
-*{
-    font-family: -apple-system,BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, cantarell,'Open Sans', 'helvetica neue', sans-serif;
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
-body{
+
+body {
     min-height: 100vh;
-    background: linear-gradient(to right top,#89CFF0, #0072B5);
+    background: linear-gradient(to right top, #89CFF0, #0072B5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-form{
-    background: #989898ce;
+
+.container {
+    background: #f5f5f5;
     width: 350px;
-    height: 580px;
-    padding: 75px 50px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    height: 480px;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-h1{
+
+form {
+    width: 100%;
+}
+
+h1 {
     text-align: center;
-    margin-bottom: 45px;
-    color: white;
-    font-size: 40px;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 32px;
 }
-.textboxdiv{
-    border-bottom: 2px solid white;
+
+.textboxdiv {
+    border-bottom: 2px solid #333;
     position: relative;
-    margin: 35px 0;
+    margin: 25px 0;
 }
-.textboxdiv input{
+
+.textboxdiv input {
     background: none;
     border: none;
     outline: none;
     width: 100%;
-    color: white;
+    color: #333;
     height: 30px;
-    font-size: 20px;
+    font-size: 16px;
 }
-.loginbtn{
+
+.loginbtn {
     transition: 0.5s;
     height: 45px;
     width: 100%;
     border: none;
     outline: none;
-    background: linear-gradient(to right top,cadetblue,whitesmoke,white);
-    background-size: 200%;
+    background: linear-gradient(to right top, #3498db, #2ecc71);
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
-.loginbtn:hover{
+
+.loginbtn:hover {
     background-position: right;
     font-size: 18px;
 }
-.signup{
-    color: white;
-    margin-top: 45px;
+
+.signup {
+    color: #333;
+    margin-top: 30px;
     text-align: center;
 }
-.signup a{
-    color: black;
+
+.signup a {
+    color: #3498db;
+    font-weight: bold;
 }
